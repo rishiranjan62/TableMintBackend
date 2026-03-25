@@ -1,0 +1,41 @@
+2026-03-25 18:50:21.020 [main] INFO  com.tablemint.TableMintApplication : Starting TableMintApplication using Java 23.0.2 with PID 77850 (/Users/rishiranjan/Documents/TableMint/TableMintBackend/target/classes started by rishiranjan in /Users/rishiranjan/Documents/TableMint/TableMintBackend)
+2026-03-25 18:50:21.021 [main] DEBUG com.tablemint.TableMintApplication : Running with Spring Boot v3.2.5, Spring v6.1.6
+2026-03-25 18:50:21.021 [main] INFO  com.tablemint.TableMintApplication : No active profile set, falling back to 1 default profile: "default"
+2026-03-25 18:50:21.328 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-03-25 18:50:21.341 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 10 ms. Found 0 JPA repository interfaces.
+2026-03-25 18:50:21.526 [main] INFO  o.s.b.w.embedded.tomcat.TomcatWebServer : Tomcat initialized with port 8080 (http)
+2026-03-25 18:50:21.531 [main] INFO  o.apache.catalina.core.StandardService : Starting service [Tomcat]
+2026-03-25 18:50:21.531 [main] INFO  o.apache.catalina.core.StandardEngine : Starting Servlet engine: [Apache Tomcat/10.1.20]
+2026-03-25 18:50:21.555 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] : Initializing Spring embedded WebApplicationContext
+2026-03-25 18:50:21.555 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 505 ms
+2026-03-25 18:50:21.605 [main] INFO  com.zaxxer.hikari.HikariDataSource : HikariPool-1 - Starting...
+2026-03-25 18:50:21.677 [main] INFO  com.zaxxer.hikari.pool.HikariPool : HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:3051df38-1bfa-4dab-8f98-795f51f2d8a3 user=SA
+2026-03-25 18:50:21.678 [main] INFO  com.zaxxer.hikari.HikariDataSource : HikariPool-1 - Start completed.
+2026-03-25 18:50:21.817 [main] INFO  o.s.o.j.p.SpringPersistenceUnitInfo : No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-03-25 18:50:21.951 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-03-25 18:50:21.971 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-03-25 18:50:22.111 [main] INFO  o.s.b.w.embedded.tomcat.TomcatWebServer : Tomcat started on port 8080 (http) with context path ''
+2026-03-25 18:50:22.115 [main] INFO  com.tablemint.TableMintApplication : Started TableMintApplication in 1.322 seconds (process running for 1.554)
+2026-03-25 18:53:24.477 [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-03-25 18:53:24.483 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource : HikariPool-1 - Shutdown initiated...
+2026-03-25 18:53:24.486 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource : HikariPool-1 - Shutdown completed.
+2026-03-25 18:53:31.814 [main] INFO  com.tablemint.TableMintApplication : Starting TableMintApplication using Java 23.0.2 with PID 80227 (/Users/rishiranjan/Documents/TableMint/TableMintBackend/target/classes started by rishiranjan in /Users/rishiranjan/Documents/TableMint/TableMintBackend)
+2026-03-25 18:53:31.815 [main] INFO  com.tablemint.TableMintApplication : No active profile set, falling back to 1 default profile: "default"
+2026-03-25 18:53:32.086 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-03-25 18:53:32.095 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 6 ms. Found 0 JPA repository interfaces.
+2026-03-25 18:53:32.270 [main] INFO  o.s.b.w.embedded.tomcat.TomcatWebServer : Tomcat initialized with port 8080 (http)
+2026-03-25 18:53:32.275 [main] INFO  o.apache.catalina.core.StandardService : Starting service [Tomcat]
+2026-03-25 18:53:32.275 [main] INFO  o.apache.catalina.core.StandardEngine : Starting Servlet engine: [Apache Tomcat/10.1.20]
+2026-03-25 18:53:32.295 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/api] : Initializing Spring embedded WebApplicationContext
+2026-03-25 18:53:32.295 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 455 ms
+2026-03-25 18:53:32.485 [main] INFO  o.s.o.j.p.SpringPersistenceUnitInfo : No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-03-25 18:53:32.496 [main] INFO  com.zaxxer.hikari.HikariDataSource : HikariPool-1 - Starting...
+2026-03-25 18:53:32.705 [main] INFO  com.zaxxer.hikari.pool.HikariPool : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@77ff14ce
+2026-03-25 18:53:32.705 [main] INFO  com.zaxxer.hikari.HikariDataSource : HikariPool-1 - Start completed.
+2026-03-25 18:53:32.730 [main] WARN  org.hibernate.orm.deprecation : HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2026-03-25 18:53:32.839 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-03-25 18:53:33.025 [main] INFO  o.s.b.w.embedded.tomcat.TomcatWebServer : Tomcat started on port 8080 (http) with context path '/api'
+2026-03-25 18:53:33.029 [main] INFO  com.tablemint.TableMintApplication : Started TableMintApplication in 1.467 seconds (process running for 1.659)
+2026-03-25 18:53:44.327 [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-03-25 18:53:44.328 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource : HikariPool-1 - Shutdown initiated...
+2026-03-25 18:53:44.331 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource : HikariPool-1 - Shutdown completed.
