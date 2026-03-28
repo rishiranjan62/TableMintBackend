@@ -1,0 +1,70 @@
+spring:
+  application:
+    name: TableMint
+  datasource:
+    url: jdbc:mysql://LocaLhost:3306/TableMint?createDatabaseIfNotExist=true
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    username: root
+    password: Inhdia@123
+  #H2 console only when using H2 (e.g. dev profile.) Disabled when using MysQL.
+  h2:
+    console:
+      enabled: false
+
+
+  jpa:
+    hibernate:
+      ddl-auto: update
+      #Uselogback(org.hibernate.SQL) for SQL Logging; show-sql would duplicate and bypass log levels
+    show-sql: false
+    properties:
+      hibernate:
+      # Single-line SQL for readable logs (format_sql: true prints multiline)
+        format_sql: false
+
+    open-in-view: false
+    database-platform: org.hibernate.dialect.MySQLDialect
+
+server:
+  port: 8080
+  servlet:
+    context-path: /api
+
+# Application logging only (no SQL in logs - production-style)
+logging:
+  Level:
+    root: INFO
+    com.tablemint: INFO
+    org. hibernate.SQL: WARN
+    org. hibernate: WARN
+
+
+  # Auth (OTP + JWT). In production set JWT secret via env (e.g. APP_JWT_SECRET).
+
+app:
+  uploads:
+    menu-dir: ${UPLOADS_MENU_DIR:./upLoads/menu}
+  auth:
+    jwt-secret: ${APP_JWT_SECRET:TableMintChangeMeInProductionSecretKeyMinimum32Chars}
+    jwt-expiration-ms: 86400000 # 24 hours
+    #End session after this many ms without any authenticated API call (all roles). Set o to disable server-side idle only.
+    session-idle-ms: ${APP_SESSION_IDLE_MS:1800000) # 30 minutes
+
+  otp:
+    expiry-seconds: 300
+    length: 6
+    # Recent OTPs shown to Floor Manager / Admin (so they can share with customers)
+    recent-display-max: 30 # max entries to keep.
+    recent-display-ttl-seconds: 60 # hide after 1 minutes
+  # Operating hours (24h format), Orders/cart only allowed when open. Server timezone used
+  restaurant:
+    open-time: ${RESTAURANT_OPEN:09:00}
+    close-time: $(RESTAURANT_CLOSE:22:00}
+  # Checkout: tax (CGST+SGST) and service charge applied to bill subtotal. Total tax 5% = CGST 2.5% +SGST 2.5%.
+  checkout:
+    cgst-percent: ${CHECKOUT_CGST_PERCENT:2.5) # Central GST (2.5%)
+    sgst-percent: ${CHECKOUT_SGST_PERCENT:2.5) # State GST (2.5%)
+    service-charge-percent: ${CHECKOUT_SERVICE_CHARGE_PERCENT:10.0) # e.g. 10%
+
+
+
