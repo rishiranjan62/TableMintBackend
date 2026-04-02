@@ -1,4 +1,7 @@
 package com.tablemint.repository;
 
-public interface RestaurantLeavePolicyRepository {
+import com.tablemint.model.RestaurantLeavePolicy;
+import org.springframework.data.jpa.repository.JpaRepository;
+
+public interface RestaurantLeavePolicyRepository extends JpaRepository<RestaurantLeavePolicy,Long> {
 }

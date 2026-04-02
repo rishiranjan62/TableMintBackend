@@ -29,6 +29,7 @@ public class OrderResponse {
     private OrderSource orderSource;
     private AggregatorPlatform aggregatorPlatform;
     private OrderStatus status;
+    private Long placedByUserId;
     private String notes;
     private Integer estimatedMinutes;
     private BigDecimal totalAmount;
@@ -37,7 +38,7 @@ public class OrderResponse {
     private Instant updatedAt;
     private PaymentMethod paymentMethod;
     private Instant paidAt;
-    private Long assignedWaiterUserIo;
+    private Long assignedWaiterUserId;
     private String assignedWaiterName;
     private Long assignedChefUserId;
     private String assignedChefName;

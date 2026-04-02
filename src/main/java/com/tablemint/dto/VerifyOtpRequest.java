@@ -14,7 +14,7 @@ import lombok.NoArgsConstructor;
 public class VerifyOtpRequest {
 
     @NotBlank(message = "Phone number is required")
-    @Pattern(regexp = "^[+]? [0-9]{10,15}$", message = "Invalid phone number")
+    @Pattern(regexp = "^[0-9]{10}$", message = "Phone Number must be exactly 10 digits")
     private String phoneNumber;
     @NotBlank(message = "OTP is required")
     @Pattern(regexp = "^[0-9]{4,8}$", message = "OTP must be 4-8 digits")

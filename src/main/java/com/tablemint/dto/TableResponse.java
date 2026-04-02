@@ -46,4 +46,6 @@ public class TableResponse {
      * True if at least one order has been placed for this table. Staff: enable Bill/Pay only when true.
      */
     private Boolean hasPLacedOrder;
+
+    private Boolean tableSharingEnabled;
 }

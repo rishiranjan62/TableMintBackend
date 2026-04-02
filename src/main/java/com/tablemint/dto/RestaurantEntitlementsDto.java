@@ -25,4 +25,5 @@ public class RestaurantEntitlementsDto {
     private boolean inventoryBasic;
     private boolean inventoryFull;
     private boolean valueAdded;
+    private boolean tableSharingValueAdded;
 }

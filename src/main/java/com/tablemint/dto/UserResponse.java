@@ -25,8 +25,14 @@ public class UserResponse {
     private LocalDate joiningDate;
     /** Optional salary (staff; admin APIs and /me for staff). */
     private BigDecimal salary;
+    private String aadhaarNumber;
     /** Restaurant name when staff belongs to a tenant. */
     private String restaurantName;
+
+    private String organizationName;
+
+    private Long organizationId;
+
     /** Present for tenant staff: plan + effective module access (null for platform admin/ customer).
      *
      */

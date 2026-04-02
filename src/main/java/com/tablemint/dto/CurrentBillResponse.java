@@ -74,4 +74,6 @@ public class CurrentBillResponse {
      */
     private Boolean applyServiceCharge;
 
+    private Boolean tableSharingActive;
+
 }

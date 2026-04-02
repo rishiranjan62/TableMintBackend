@@ -20,6 +20,11 @@ public class CreateStaffRequest {
     @Size(max = 100)
     private String name;
 
+    /** Exactly 12 digits, no spaces. */
+    @NotBlank(message = "Aadhaar number is required")
+    @Pattern(regexp = "^[0-9]{12}$", message = "Aadhaar must be exactly 12 digits")
+    private String aadhaarNumber;
+
     @NotNull(message = "Role is required")
     private UserRole role;
 

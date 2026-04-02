@@ -16,6 +16,11 @@ import java.time.Instant;
 public class PlatformRestaurantDto {
 
     private Long id;
+
+    private Long organizationId;
+    private String organizationName;
+    private String organizationSlug;
+
     private String name;
     private String slug;
     private String phone;
@@ -30,6 +35,7 @@ public class PlatformRestaurantDto {
     private Boolean featureInventoryBasic;
     private Boolean featureInventoryFulL;
     private Boolean featureValueAdded;
+    private Boolean featureTableSharingValueAdded;
 
     /**
      * Effective access after applying plan limits to flags.
@@ -38,6 +44,7 @@ public class PlatformRestaurantDto {
     private Boolean effectiveInventoryBasic;
     private Boolean effectiveInventoryFulL;
     private Boolean effectiveValueAdded;
+    private Boolean effectiveTableSharingValueAdded;
     private Integer maxStaffSeats;
 
     private TenantBillingPhase billingPhase;
@@ -49,6 +56,7 @@ public class PlatformRestaurantDto {
     /**
      * Earliest-created active ADMIN for renewal / support outreach (may be null).
      */
+    private Long primaryAdminUserId;
     private String primaryAdminName;
     private String primaryAdminPhone;
     private String primaryAdminEmail;

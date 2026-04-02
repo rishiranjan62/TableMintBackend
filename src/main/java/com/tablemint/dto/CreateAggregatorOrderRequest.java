@@ -1,6 +1,7 @@
 package com.tablemint.dto;
 
 import com.tablemint.model.AggregatorPlatform;
+import jakarta.validation.Valid;
 import jakarta.validation.constraints.DecimalMin;
 import jakarta.validation.constraints.NotBlank;
 import jakarta.validation.constraints.NotNull;
@@ -8,6 +9,7 @@ import lombok.Data;
 
 import java.math.BigDecimal;
 import java.time.LocalDate;
+import java.util.List;
 
 @Data
 public class CreateAggregatorOrderRequest {
@@ -32,4 +34,7 @@ public class CreateAggregatorOrderRequest {
 
     /** Order date for this entry (defaults to today if not provided)*/
     private LocalDate orderDate;
+
+    @Valid
+    private List<AggregatorMenuLineRequest> menuLines;
 }

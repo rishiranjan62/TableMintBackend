@@ -35,4 +35,6 @@ public class UpdateStaffRequest {
      * Omitted = Leave unchanged.
      */
     private Boolean enabled;
+
+    private String aadhaarNumber;
 }

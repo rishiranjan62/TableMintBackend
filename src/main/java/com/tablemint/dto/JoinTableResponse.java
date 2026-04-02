@@ -12,4 +12,5 @@ public class JoinTableResponse {
     private String tableNumber;
     private String message;
     private Instant joinedAt;
+    private Boolean tableSharingActive;
 }
