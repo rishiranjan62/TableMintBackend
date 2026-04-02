@@ -1,4 +1,15 @@
 package com.tablemint.exception;
 
-public class TableUnavailableException extends RuntimeException{
+import lombok.Getter;
+
+@Getter
+public class TableUnavailableException extends RuntimeException {
+
+    private final String customerMessage;
+
+
+    public TableUnavailableException(String message, String customerMessage) {
+        super(message);
+        this.customerMessage = customerMessage;
+    }
 }
