@@ -28,4 +28,6 @@ public class PayBillRequest {
 
     @DecimalMin(value = "0.0", message = "Discount value can't be negative")
     private BigDecimal discountValue;
+
+    private Long payForCustomerUserId;
 }

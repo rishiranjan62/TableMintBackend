@@ -14,7 +14,7 @@ import lombok.NoArgsConstructor;
 public class SendOtpRequest {
 
     @NotBlank(message = "Phone number is required")
-    @Pattern(regexp = "^[+]?[0-9]{10,15}$", message = "Invalid phone number")
+    @Pattern(regexp = "^[0-9]{10}$", message = "Invalid phone number")
     private String phoneNumber;
     /**
      * Optional: table number when customer is trying to join a table (shown to FM/Admin with 0TP).

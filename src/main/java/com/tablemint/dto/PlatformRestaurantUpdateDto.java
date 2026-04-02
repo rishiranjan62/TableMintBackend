@@ -8,6 +8,10 @@ import java.time.Instant;
 @Data
 public class PlatformRestaurantUpdateDto {
 
+
+    private Long organizationId;
+    private Boolean clearOrganization;
+
     /**
      * When false, restaurant is restricted: staff cannot log in.
      */
@@ -18,7 +22,7 @@ public class PlatformRestaurantUpdateDto {
     private Boolean featureInventoryBasic;
     private Boolean featureInventoryFulL;
     private Boolean featureValueAdded;
-
+    private Boolean featureTableSharingValueAdded;
     /**
      * Add days to access end (trial or paid). Re-enables an expired tenant as trial with full Pro flags.
      */
