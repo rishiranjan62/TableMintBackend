@@ -1,6 +1,5 @@
 package com.tablemint.dto;
 
-import com.tablemint.model.SubscriptionPlan;
 import lombok.Data;
 
 import java.time.Instant;

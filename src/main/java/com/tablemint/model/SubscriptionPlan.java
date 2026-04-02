@@ -1,4 +1,8 @@
 package com.tablemint.model;
 
-public class SubscriptionPlan {
+public enum SubscriptionPlan {
+
+    STARTER,
+    BUSINESS,
+    PRO
 }

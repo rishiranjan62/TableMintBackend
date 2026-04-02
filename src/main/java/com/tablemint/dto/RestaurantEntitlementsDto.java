@@ -1,6 +1,5 @@
 package com.tablemint.dto;
 
-import com.tablemint.model.SubscriptionPlan;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
